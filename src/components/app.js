@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import HeaderMenu from './headermenu';
+
 
 export default class App extends Component {
   render() {
     return (
-      <div>React application</div>
+      <div>
+      <div className="header">Small business apps</div>
+      <HeaderMenu />
+      </div>
     );
   }
 }
