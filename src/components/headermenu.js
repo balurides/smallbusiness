@@ -3,14 +3,18 @@ import React, { Component } from 'react';
 export default class HeaderMenu extends Component {
   render() {
     return (
-      <div className="top-navigation-menu">
-        <ul>
-          <li className="header-menu"> Home </li>
-          <li className="header-menu">Media</li>
-          <li className="header-menu">Activities</li>
-          <li className="header-menu">Locations</li>
-          <li className="header-menu">Contact us</li>
-        </ul>
+      <div id="top-navigation-menu">
+        <nav className="category-menu" aria-label="main">
+          <ul className="primary-nav">
+            <li >
+              <a href="#" className=""> Home </a>
+            </li>
+            <li >Media</li>
+            <li >Activities</li>
+            <li >Locations</li>
+            <li >Contact us</li>
+          </ul>
+        </nav>
       </div>
     );
   }
