@@ -9,6 +9,7 @@ export default class App extends Component {
         <header id="header">
           <div className="header-title">Small business apps</div>
           <HeaderMenu />
+          
         </header>
       </div>
     );
