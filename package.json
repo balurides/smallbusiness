@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
+    "json-loader": "^0.5.7",
     "lodash": "^3.10.1",
     "react": "16.3.2",
     "react-dom": "16.3.2",
