@@ -7,7 +7,7 @@ export default class App extends Component {
     return (
       <div>
         <header id="header">
-          <div className="header-title">Small business apps</div>
+          <div className="header-title">Morning person lifestyle</div>
           <HeaderMenu />
           
         </header>

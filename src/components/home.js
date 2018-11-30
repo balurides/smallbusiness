@@ -7,8 +7,8 @@ export default class Home extends Component {
         const homeDatalist = HOME_DATA.map((data,index) => {
             return(
                 <li  key={index}>
-                    <h2 > {data.title}</h2>
-                    <div > {data.description} </div>
+                    <h4 > {data.title}</h4>
+                    <p > {data.description} </p>
                 </li>
             )
         });
@@ -20,9 +20,9 @@ export default class Home extends Component {
     }
     render() {
     return(
-        <div>
+        <div className="home-page">
 
-        <h1 className="test"> Morning person </h1>
+        <h1 className="home-page-title"> Morning person </h1>
         <span> a person who likes the early part of the day : a person who has the most energy in the morning </span>
         <div>
             {this.renderHomeData()}

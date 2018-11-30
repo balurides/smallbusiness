@@ -77,3 +77,19 @@ div {
     width: 100%;
     margin: auto;
 }
+.home-page{
+    background-color:ghostwhite;
+    -webkit-text-fill-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+}
+.home-page-title{
+    line-height: 2.10;
+    font-size: 50px;
+    margin: 10px;
+    font-style: oblique;
+    font-family: -webkit-body;
+    color: crimson;
+}
