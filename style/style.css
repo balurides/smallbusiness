@@ -33,7 +33,7 @@
     margin: 1p;
     text-align: center;
     padding: 0;
-
+    font-size: 50px;
 }
 
 #header .category-menu{
@@ -56,7 +56,6 @@ primary-nav {
     padding: 0;
 }
 #header {
-    font-size: 50px;
     line-height: 1.5;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: beige;
@@ -75,7 +74,7 @@ div {
     position: absolute;
     padding: 0%;
     width: 100%;
-    margin: auto;
+    margin-top:auto;
 }
 .home-page{
     background-color:ghostwhite;
@@ -86,10 +85,43 @@ div {
 
 }
 .home-page-title{
-    line-height: 2.10;
+    /* line-height: 2.10; */
     font-size: 50px;
-    margin: 10px;
+    /* margin: 10px; */
     font-style: oblique;
     font-family: -webkit-body;
     color: crimson;
+    font-weight:700;
+    text-decoration:underline;
+    text-decoration-color: darkslategray;
+}
+.home-page-content{
+    margin: auto;
+    font-size: 20px;
+    font-style: normal;
+}
+ol {
+ font-size: 20px;  
+}
+ol li{
+    color: black;
+    font-size: 20px;
+    align-items: flex-start;
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: ghostwhite;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.data-title {
+    font-size: 20px;
+    font-weight: 900;
 }
