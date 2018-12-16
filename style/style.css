@@ -127,21 +127,16 @@ ol li{
 }
 
 #bg img {
-    /* background: url('./../src/images/Media_backGround.jpg') no-repeat Center center fixed; */
     min-height: 100%;
     min-width: 100%;      
     width: auto;
     height: auto;
-      
-    /* Set up positioning */
     position: fixed;
-    /* top: 0; */
-    /* left: 0; */
   }
   
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
+@media screen and (max-width: 1024px) {
     img.bg {
       left: 50%;
-      margin-left: -512px;   /* 50% */
+      margin-left: -512px;  
     }
   }

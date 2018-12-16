@@ -1,4 +1,6 @@
 {
-  "presets": ["env","react", "es2015"],
-  "plugins": ["transform-runtime", "lodash", "transform-decorators-legacy"]
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ]
 }

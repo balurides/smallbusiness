@@ -1,36 +1,48 @@
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+
 
 module.exports = {
-  entry: './src/index.js',
-    module: {
-      rules: [
-          {
-            test: /\.(js|jsx)$/,
-            exclude: /node_modules/,
-            use:[ {
-              loader:'babel-loader',
-              options: {
-                presets: [
-                  ['@babel/preset-env']
-                ]
-              }
+  entry: ['./src/index.js',
+          './style/style.css'],
+  output: {
+          publicPath: '/',
+          path: path.join(__dirname, 'dist/'),
+          filename: 'index_bundle.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use:[ {
+            loader:'babel-loader',
             }]
-          }
-      ]
-    },
-    resolve: {
-      extensions: ['*', '.js', '.jsx']
-    },
-    output: {
-      path: __dirname + '/dist',
-      publicPath: '/',
-      filename: 'bundle.js'
-    },
-    plugins: [
-      new webpack.HotModuleReplacementPlugin()
-    ],
-    devServer: {
-      contentBase: './dist',
-      hot: true
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg|ico)$/i,
+        use: [
+            {
+                loader: "file-loader",
+                options: {
+                    outputPath: "assets/"
+                }
+            }
+        ]
     }
-  };
+    ]
+  },
+    
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
+  },
+   
+  plugins: [
+    new HtmlWebpackPlugin({
+      template:"./index.html"
+    })],
+};
