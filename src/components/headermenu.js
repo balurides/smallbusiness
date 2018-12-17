@@ -16,13 +16,16 @@ export default class HeaderMenu extends Component {
     return (
       <Router>
       <div id="top-navigation-menu">
-        <nav className="category-menu" aria-label="main">
-          <Header /> 
+        <nav className="category-menu" aria-label="main"> 
+          <Header />
+        </nav>
+      <div>
+        <br/>
           <hr className="headerline" />
           <Route path= "/" exact component =  {Home} />
           <Route path= "/media" exact component =  {Media} />
           <Route path= "/contactus" exact component =  {ContactUs} />
-        </nav>
+        </div>
       </div>
     </Router>
     );
