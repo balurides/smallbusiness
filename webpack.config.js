@@ -17,6 +17,8 @@ module.exports = {
         exclude: /node_modules/,
         use:[ {
             loader:'babel-loader',
+            options: { babelrcRoots: ['.', '../'] },
+            // options: { babelrcRoots: ['.', './node_modules/react-pdf'] },
             }]
       },
       {

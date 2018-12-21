@@ -159,3 +159,52 @@ li {
       margin-left: -512px;  
     }
   }
+
+  .carousel {
+      height: 100%;
+      margin: 0;
+      width: 100%;
+  }
+
+  .image-slide {
+	height: 100%;
+	width: 100%;
+	transition: background-image .3s ease-in-out;
+}
+
+.slider {
+    height:700px;
+    width: 700px;
+    position: relative; 
+}
+
+.slide {
+    height: 100%;
+    width: 30%;
+    display: inline-block;
+}
+.slider-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nextArrow {
+    
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    text-align: center;
+    width: 100%;
+}
+.backArrow {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    text-align: center;
+    width: 100%;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 30px;
+    position: relative;
+}

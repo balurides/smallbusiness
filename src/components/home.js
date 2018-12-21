@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { HOME_DATA } from './../data/homedata';
+import React, { Component  } from 'react';
+import { HOME_DATA } from '../data/homedata';
 
 export default class Home extends Component {
 
