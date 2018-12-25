@@ -1,13 +1,12 @@
 import React, { Component  } from 'react';
-import  Slider from './carousels/slider';
-
+import  MediaCarousels from '../components/carousels/carousels';
 
 export default class Media extends Component {
     
     render() {
         return(
-            <div>
-            <span className= "media_page_title"> Media page </span>
+            <div className="media-page">
+            <span className= "media-page-title"> Media page </span>
                 <br />
                 <br/>
                 {/* <div>
@@ -21,8 +20,9 @@ export default class Media extends Component {
                 <br />
                 <br />
                 <span> carousels </span>
-                <Slider />
+                <MediaCarousels />
             </div>
+            
         );
     }
 }

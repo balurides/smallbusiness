@@ -8,8 +8,8 @@ export default class App extends Component {
       <div>
         <header>
           <span className="header-title">Morning person lifestyle</span>
-        </header>
           <HeaderMenu />
+        </header>
           <Footer/>
        
       </div>

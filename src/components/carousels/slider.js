@@ -42,7 +42,6 @@ class Slider extends Component {
     render(){
         return(
             <div  className="slider">
-                <LeftArrow goToPrevSlide={this.goToPrevSlide}  />
                 <div className="slider-wrapper"
                 style={{
                     transform: `translateX(${this.state.translateValue}px)`,
@@ -57,6 +56,7 @@ class Slider extends Component {
                 }
                 </div>
                 
+                <LeftArrow goToPrevSlide={this.goToPrevSlide}  />
                 <RightArrow goToNextSlide = {this.goToNextSlide} />
             </div>
         );
