@@ -21,12 +21,11 @@ export default class Home extends Component {
     render() {
     return(
         <div className="home-page">
-
-        <h1 className="home-page-title"> Morning person </h1>
-        <span className="home-page-content"> a person who likes the early part of the day : a person who has the most energy in the morning </span>
-        <div>
-            {this.renderHomeData()}
-        </div>
+            <h1 className="home-page-title"> Morning person </h1>
+            <span > a person who likes the early part of the day : a person who has the most energy in the morning </span>
+            <div>
+                {this.renderHomeData()}
+            </div>
         </div>
     )}
 }

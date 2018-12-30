@@ -8,9 +8,9 @@ export default class App extends Component {
       <div>
         <header>
           <span className="header-title">Morning person lifestyle</span>
-          <HeaderMenu />
         </header>
-          <Footer/>
+        <HeaderMenu />
+        <Footer/>
        
       </div>
     );

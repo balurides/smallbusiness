@@ -1,4 +1,6 @@
-
+body {
+    counter-reset: pages;
+}
 .container {
     width: auto;
 	max-width: 90%;
@@ -11,6 +13,11 @@
   top: 50px;
   left: 0px;
   background-color: currentColor;
+}
+.page-container{
+    position: absolute;
+    width: 100%;
+    top: 8%;
 }
 .header-title {
     top:0px;
@@ -54,11 +61,11 @@
 
 .primary-nav {
     list-style-type: disc;
-    margin: 10px;
-    display: inline-block;
+    padding: 10px;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    text-align: center;
+    text-align: right;
+    float: right!important;
     width: 100%;
 }
 
@@ -74,13 +81,12 @@ div {
 }
 .headerline{
     background-color: rebeccapurple;
-    border: 1px solid #666;
+    border: 2px solid #666;
     border-style: inset;
-    position: absolute;
-    top:79px;
-    padding: 0%;
+    position: relative;
+    padding: 0.03%;
     width: 100%;
-    margin-top:auto;
+    margin-top: auto;
 }
 .home-page{
     background-color:ghostwhite;
@@ -91,33 +97,39 @@ div {
     overflow: auto;
 }
 .home-page-title{
-    /* line-height: 2.10; */
-    font-size: 50px;
+    font-size: 5em;
     /* margin: 10px; */
     font-style: oblique;
     font-family: -webkit-body;
     color: crimson;
-    font-weight:700;
-    text-decoration:underline;
-    text-decoration-color: darkslategray;
+    text-decoration: underline;
 }
-.home-page-content{
+.home-page span{
     margin: auto;
-    font-size: 20px;
+    font-size: 2.5em;
     font-style: normal;
 }
-ol {
- font-size: 20px;  
-}
+
 ol li{
     color: black;
-    font-size: 20px;
+    font-size: 2.5em;
     align-items: flex-start;
+    /* list-style-type:lower-roman; */
+    counter-increment: pages;
+
+}
+.data-title {
+    font-size: 1em;
+    padding: 0%;
+    margin: 0%;
 }
 
-li {
-    list-style-type: none;
+ol {
+    margin-left: 1.8em;
+    display: inline-table;
+    font-size: 1em;
 }
+
 
 .footer{
     left: 0;
@@ -132,21 +144,18 @@ li {
     justify-content: space-around;
 }
 
-.data-title {
-    font-size: 20px;
-    font-weight: 900;
-}
+
 .media-page {
     margin-top: 0%;
 }
 .media-page-title {
-    background:gold;
+    background: darkgrey;
     width: 100%;
     position: absolute;
-    text-align: left;
-    font-size: 25px;
-    font-family: monospace;
-    padding-left:20px
+    text-align: center;
+    font-size: 50px;
+    font-family: initial;
+    padding-left: 20px;
 }
   #media_image {
     display: inline-flex;
@@ -219,4 +228,23 @@ li {
     display: inline-block;
     padding: 30px;
     position: relative;
+}
+.image-carousel {
+    height: 100%;
+    width: 50%;
+}
+
+
+
+.contactus-container {
+    position: absolute;
+    text-align: left;
+}
+
+.inside-bar {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%)
 }

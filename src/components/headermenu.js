@@ -3,12 +3,9 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Header from './header';
 import Home from './home';
 import Media from './media';
+import Contactus from './contactus';
 
-const ContactUs = () => {
-  return(
-    <h1> Contact Us page </h1>
-  )
-}
+
 export default class HeaderMenu extends Component {
 
 
@@ -20,15 +17,14 @@ export default class HeaderMenu extends Component {
             <nav className="category-menu" aria-label="main"> 
               <Header />
             </nav>
-            <div>
-              <br/>
+          </div>
+            <div className="page-container">
               <hr className="headerline" />
               <Route path= "/" exact component =  {Home} />
               <Route path= "/media" exact component =  {Media} />
-              <Route path= "/contactus" exact component =  {ContactUs} />
+              <Route path= "/contactus" exact component =  {Contactus} />
             </div>
           </div>
-        </div>
     </Router>
     );
   }

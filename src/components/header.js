@@ -12,12 +12,6 @@ export default class Header extends Component {
             <Link to="/media"> Media </Link>
           </li>
           <li >
-            <Link to="/activities"> Activities </Link>
-          </li>
-          <li >
-            <Link to="/locations"> Locations </Link>
-          </li>
-          <li >
             <Link to="/contactus"> Contact Us </Link>
           </li>
         </ul>

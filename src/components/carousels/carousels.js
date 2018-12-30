@@ -23,7 +23,7 @@ export default class MediaCarousels extends Component {
                     this.state.images.map((image,i) => {
                         return(
                             <div>
-                                <img key={i} src={image}  />
+                                <img className="image-carousel" key={i} src={image}  />
                                 <span className="legend"> Test image: {i+1}</span>
                             </div>
                         )
