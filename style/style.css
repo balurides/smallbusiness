@@ -130,21 +130,6 @@ ol {
     font-size: 1em;
 }
 
-
-.footer{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    position: fixed;
-    text-align: center;
-    background-color: ghostwhite;
-    font-size: 20px;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-}
-
-
 .media-page {
     margin-top: 0%;
 }
@@ -241,10 +226,28 @@ ol {
     text-align: left;
 }
 
-.inside-bar {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    font-size: 50px;
-    transform: translate(-50%, -50%)
+.contactus-img {
+    position: relative;
+    top: 2em;
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 4rem;
+    font-style: italic;
+    text-align: start;
+    text-decoration-line: underline;
+    color:blue;
+    padding-right: 85%;
+    padding-top: 63%;
+    padding-bottom: 20%;
+    background-size: 500px;
+    filter: contrast(1);
+    background-image: url(../src/images/contactus.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
 }
+
+.contactus-container:after {
+    content: "";
+}
+
