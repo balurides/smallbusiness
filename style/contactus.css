@@ -1,0 +1,19 @@
+
+.contactus-container {
+    width: 14rem;
+    height: 4rem;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    background-size: cover;
+    font-size: 1.5rem;
+    text-align: inherit;
+    color: floralwhite;
+    position: absolute;
+    background-image: url(../src/images/contactus.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.contactus-container:after {
+    content: "";
+}

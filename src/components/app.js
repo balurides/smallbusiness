@@ -10,7 +10,7 @@ export default class App extends Component {
           <span className="header-title">Morning person lifestyle</span>
         </header>
         <HeaderMenu />
-        <Footer/>
+        {/* <Footer/> */}
        
       </div>
     );

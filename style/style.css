@@ -5,33 +5,37 @@ body {
     width: auto;
 	max-width: 90%;
 }
+.header-title {
+    top:0px;
+    bottom: 1rem;
+    background:#F28C38;
+    text-align: center;
+    color: black;
+    height: 3rem;
+    font-size: 3rem;
+    width: 100%;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1001;
+}
+
 #top-navigation-menu {
   height:100px ;
   width: 100%;
   display: inline-block;
   position: absolute;
-  top: 50px;
+  top: 3rem;
   left: 0px;
+  z-index: 1000;
   background-color: currentColor;
 }
 .page-container{
     position: absolute;
     width: 100%;
-    top: 8%;
+    top: 8rem;
 }
-.header-title {
-    top:0px;
-    bottom: 10px;
-    background:#F28C38;
-    text-align: center;
-    color: black;
-    height: 50px;
-    font-size: 50px;
-    width: 100%;
-    left: 0px;
-    overflow: hidden;
-    position: absolute;
-}
+
 .category-menu > ul > li {
     position: relative;
     z-index: 1015;
@@ -84,9 +88,11 @@ div {
     border: 2px solid #666;
     border-style: inset;
     position: relative;
-    padding: 0.03%;
+    padding: 1%;
     width: 100%;
     margin-top: auto;
+    z-index: 999;
+
 }
 .home-page{
     background-color:ghostwhite;
@@ -217,37 +223,5 @@ ol {
 .image-carousel {
     height: 100%;
     width: 50%;
-}
-
-
-
-.contactus-container {
-    position: absolute;
-    text-align: left;
-}
-
-.contactus-img {
-    position: relative;
-    top: 2em;
-    display: block;
-    width: 100%;
-    height: auto;
-    font-size: 4rem;
-    font-style: italic;
-    text-align: start;
-    text-decoration-line: underline;
-    color:blue;
-    padding-right: 85%;
-    padding-top: 63%;
-    padding-bottom: 20%;
-    background-size: 500px;
-    filter: contrast(1);
-    background-image: url(../src/images/contactus.jpg);
-    background-repeat: no-repeat;
-    background-position: top left;
-}
-
-.contactus-container:after {
-    content: "";
 }
 

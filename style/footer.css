@@ -1,11 +1,14 @@
 .footer{
-    left: 0;
+    left: 0%;
     bottom: 0;
     width: 100%;
+    padding: 0.5%;
+    height: 25%;
     position: fixed;
+    display: flow-root;
     text-align: left;
     background-color: greenyellow;
-    font-size: 2em;
+    font-size: 1em;
     color: black;
     justify-content: space-around;
 }
@@ -22,16 +25,18 @@
 }
 .footer ul li h4{
     display: inline-block;
-    width: 33%;
-
+    position: relative;
 }
 
 .support-images {
     background-image: url(../src/images/talktous.jpg);
-    font-size: 0.73em;
-    background-size: 80px;
-    padding: 10%;
-    position: fixed;
-    text-align: center;
     background-repeat: no-repeat;
+    font-size: 1em;
+    background-size: 40px;
+    background-position: bottom left;
+    padding: 10%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+    position: absolute;
+    text-align: left;
 }
