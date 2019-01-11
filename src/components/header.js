@@ -1,18 +1,17 @@
 import React, { Component  } from 'react';
-import {Link} from 'react-router-dom';
 
 export default class Header extends Component {
     render() {
       return (
         <ul className="primary-nav">
           <li >
-            <Link to="/"> Home </Link>
+            <a href="./"> Home </a>
           </li>
           <li >
-            <Link to="/media"> Media </Link>
+            <a href="./media"> Media </a>
           </li>
           <li >
-            <Link to="/contactus"> Contact Us </Link>
+            <a href="./contactus"> Contact Us </a>
           </li>
         </ul>
       )}}
