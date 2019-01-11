@@ -1,25 +1,36 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
-
+const webpack = require('webpack');
 
 module.exports = {
-  entry: ['./src/index.js',
-          './style/style.css'],
-  output: {
-          publicPath: '/',
-          path: path.join(__dirname, 'dist/'),
-          filename: 'index_bundle.js'
+  mode: 'development',
+  entry: [
+    // path.resolve(__dirname,'../src','index.js'),
+    './src/index.js',
+    'webpack/hot/only-dev-server',
+    './style/style.css'
+  ],
+  devtool: 'source-map',
+  devServer: {
+    contentBase: '/dist',
+    hot:true,
+      historyApiFallback: true,
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use:[ {
+        // exclude: /node_modules/,
+        loader: require.resolve('babel-loader'),
+        exclude: /node_modules/
+
+        /* use:[ {
             loader:'babel-loader',
+           
             options: { babelrcRoots: ['.', '../'] },
             // options: { babelrcRoots: ['.', './node_modules/react-pdf'] },
-            }]
+            }], */
       },
       {
         test: /\.css$/,
@@ -35,16 +46,25 @@ module.exports = {
                 }
             }
         ]
-    }
+      },
+      
     ]
   },
-    
-  resolve: {
-    extensions: ['*', '.js', '.jsx']
-  },
-   
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'output Management',
       template:"./index.html"
-    })],
+    }),
+    new webpack.ProvidePlugin({
+      _:'lodash',
+      join: ['lodash','join']
+    }),
+    new CleanWebpackPlugin(['dist']),
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  output: {
+    path: __dirname + '/build',
+    filename: 'bundle.js'
+  },
+    
 };

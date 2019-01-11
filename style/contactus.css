@@ -1,19 +1,27 @@
 
 .contactus-container {
-    width: 14rem;
-    height: 4rem;
-    padding: 1rem;
+    width: auto;
+    top: 18%;
+    height: 33%;
+    left: 0;
     margin: 0.5rem auto;
     background-size: cover;
-    font-size: 1.5rem;
-    text-align: inherit;
-    color: floralwhite;
+    color: black;
+    font-weight: 900;
     position: absolute;
-    background-image: url(../src/images/contactus.jpg);
-    background-repeat: no-repeat;
-
+    display: inline-block;
 }
-
-.contactus-container:after {
-    content: "";
+.contactus-container h1 {
+    padding: 0%;
+    color: brown;
+    margin-bottom: 0%;
+}
+.contactus-img {
+    width: 100%;
+    padding: 100% 80% 90% 5%;
+    margin-bottom: 10%;
+    clear: both;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../src/images/contactus.jpg);
 }
