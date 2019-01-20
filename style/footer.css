@@ -2,12 +2,12 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 0.5%;
+    /* padding: 0.5%; */
     height: 25%;
     display: flow-root;
     text-align: left;
     background-color:grey;
-    font-size: 1em;
+    /* font-size: 1em; */
     color: black;
     justify-content: space-around;
     position: fixed;

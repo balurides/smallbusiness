@@ -6,9 +6,7 @@ export default class Media extends Component {
     render() {
         return(
             <div className="media-page">
-            <span className= "media-page-title"> Media page </span>
-                <br />
-                <br/>
+                <span className= "media-page-title"> Media page </span>
                 {/* <div>
                     <ul>
                         <li  list-style-type="none"> 
@@ -17,7 +15,6 @@ export default class Media extends Component {
                         </li>
                     </ul>
                 </div> */}
-                <br />
                 <br />
                 <span> carousels </span>
                 <MediaCarousels />

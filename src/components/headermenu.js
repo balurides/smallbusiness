@@ -1,7 +1,7 @@
 import React, { Component  } from 'react';
 import Home from './home';
 import Media from './media';
-import Contactus from './contactus';
+import Contactus from './contactus/contactus';
 import { Switch, BrowserRouter, Route, browserHistory} from 'react-router-dom';
 
 

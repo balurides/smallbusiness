@@ -4,7 +4,6 @@ import './../../style/footer.css';
 export default class Footer extends Component {
     render() {
         return(
-            <footer>
                 <div className="footer" > 
                     <ul>
                         <li> 
@@ -31,7 +30,6 @@ export default class Footer extends Component {
                         </li>
                     </ul>
                 </div>
-            </footer>
            
 
         );
