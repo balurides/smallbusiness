@@ -13,6 +13,9 @@ export default class Header extends Component {
           <li >
             <a href="./contactus"> Contact Us </a>
           </li>
+          <li >
+            <a href="./schedules"> Schedules </a>
+          </li>
         </ul>
       )}}
 

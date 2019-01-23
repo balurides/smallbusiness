@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import './../../../style/contactus.css';
 import './../../../style/materialize.css';
+import CallUs from './callUs';
 
 export default class Contactus extends Component {
     render() {
@@ -13,7 +14,12 @@ export default class Contactus extends Component {
                     <hr className="col s8 m8 l9" styles="padding: 1rem;"/>
                 </div>
                 <div className="row">
-                    <img className="contactus-img"/>
+                    <div className="col s3 m4">
+                        <img className="contactus-img"/>
+                    </div>
+                    <div className="col s4 m3">
+                        <CallUs />
+                    </div>
                 </div>
                 <div className="row">
                     <hr className="col s12 m12 l12" styles="padding: 1rem;"/>
@@ -32,17 +38,17 @@ export default class Contactus extends Component {
                                     id="first_name"
                                     type="text"
                                     className="validate"/>
-                                <label for="first_name">First Name</label>
+                                <label htmlFor="first_name">First Name</label>
                             </div>
                             <div className="input-field col s6">
                                 <input id="last_name" type="text" className="validate"/>
-                                <label for="last_name">Last Name</label>
+                                <label htmlFor="last_name">Last Name</label>
                             </div>
                         </div>
                         <div className="row">
                             <div className="input-field col s12">
                                 <input id="email" type="email" className="validate"/>
-                                <label for="email">Email</label>
+                                <label htmlFor="email">Email</label>
                             </div>
                         </div>
                         <div className="row">
