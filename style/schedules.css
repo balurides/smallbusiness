@@ -1,0 +1,44 @@
+.schuedlesContainer{
+    top:5rem;
+    position: relative;
+}
+.season {
+    top: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    
+    height: 100%;
+    align-items: stretch;
+}
+.icon-left {
+    top: 0em;
+    position: relative;
+    left: 0px;
+}
+.icon-right {
+    top: 1em;
+    position: relative;
+    left: 0.5em;
+    height: 30%l;
+}
+
+.season-display.winter i {
+    color: blue;
+}
+.season-display.summer i {
+    color: red;
+}
+.season-display{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+}
+.summer {
+    background-color: coral;
+}
+.winter {
+    background-color: aliceblue;
+}
